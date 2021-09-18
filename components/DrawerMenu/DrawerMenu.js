@@ -17,15 +17,17 @@ const useStyles = makeStyles(theme => ({
     minHeight: '87px',
   },
 }))
-const DrawerMenu = () => {
+const DrawerMenu = (props) => {
   const classes = useStyles();
   return (
     <Drawer
       className={classes.drawer}
-      variant='permanent'
+      variant={props.variant}
+      open={props.open}
       classes={{
         paper: classes.drawerPaper
       }}
+      onClose={props.onClose ? props.onClose : null}
       anchor='left'
     >
       <div className={classes.toolbar}></div>

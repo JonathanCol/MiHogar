@@ -10,7 +10,7 @@ import DraftsIcon from '@material-ui/icons/Drafts';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
@@ -27,27 +27,26 @@ export default function SimpleList() {
     <div className={classes.root}>
       <List component="nav" aria-label="main mailbox folders">
         <ListItem button>
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" />
+          <ListItemLink href="/">
+          <ListItemText primary="Nosotros" />
+          </ListItemLink>
+          
         </ListItem>
         <ListItem button>
-          <ListItemIcon>
-            <DraftsIcon />
-          </ListItemIcon>
-          <ListItemText primary="Drafts" />
+          <ListItemLink href="/Contacto">
+          <ListItemText primary="Contacto" />
+          </ListItemLink>
+          
+        </ListItem>
+        <ListItem button>
+          <ListItemLink href="/Login">
+          <ListItemText primary="Login" />
+          </ListItemLink>
+          
         </ListItem>
       </List>
       <Divider />
-      <List component="nav" aria-label="secondary mailbox folders">
-        <ListItem button>
-          <ListItemText primary="Trash" />
-        </ListItem>
-        <ListItemLink href="/">
-          <ListItemText primary="Spam" />
-        </ListItemLink>
-      </List>
+      
     </div>
   );
 }

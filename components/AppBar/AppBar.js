@@ -33,11 +33,14 @@ const useStyles = makeStyles((theme) => ({
     },
     textDecoration: 'none',
     color: '#59595b',
+    fontSize: '16px'
+
   },
+  
 }));
 
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props) {
   const classes = useStyles();
 
   return (
@@ -48,30 +51,32 @@ export default function ButtonAppBar() {
             <Grid item xs={8}>
               <Image src="/images/home.png" width={80} height={80} />
             </Grid>
-            <Grid item xs>
+            <Grid item xs >
               <Link href="/Nosotros">
-                <a>Nosotros</a>
+                <a className={classes.textTypo}>Nosotros</a>
               </Link>
             </Grid>
             <Grid item xs>
             <Link href="/Contacto">
-                <a>Contacto</a>
+                <a className={classes.textTypo}>Contacto</a>
               </Link>
             </Grid>
             <Grid item xs>
             <Link href="/Login" >
-                <a>Login</a>
+                <a className={classes.textTypo}>Login</a>
               </Link>
             </Grid>
             <Grid item xs>
-              <IconButton
+            <IconButton
                 aria-label="open drawer"
                 className={classes.menuButton}
+                onClick = {()=> props.buttonAbrir()}
               >
                 <MenuIcon />
               </IconButton>
             </Grid>
           </Grid>
+          
         </Toolbar>
       </AppBar>
       
