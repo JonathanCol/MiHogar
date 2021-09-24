@@ -6,7 +6,7 @@ const Nosotros = () => {
   return (
     <div>
       <Layout>
-        <h1>Contacto</h1>
+        
       </Layout>
     </div>
   );

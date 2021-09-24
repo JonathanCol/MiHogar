@@ -13,10 +13,9 @@ import DrawerMenu from "../DrawerMenu";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    display: "flex",
   },
   menuButton: {
-    marginRight: theme.spacing(2),
-
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
@@ -32,7 +31,9 @@ const useStyles = makeStyles((theme) => ({
     },
     textDecoration: "none",
     color: "#59595b",
-    fontSize: "16px",
+    fontSize: "14px",
+    margin: "1rem",
+
   },
 }));
 
@@ -43,30 +44,40 @@ export default function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" color="inherit">
         <Toolbar>
-          <Grid container spacing={1} alignItems="center">
-            <Grid container item flexGrow={1}>
-              <Image src="/images/home.png" width={80} height={80} />
-            </Grid>
-            <Grid item sx={{ display: { md: "flex", xs: "none" } }} md={2}>
-              <Link href="/Nosotros">
-                <a className={classes.textTypo}>Nosotros</a>
+          <Grid container spacing={1} alignItems="center"  >
+            <Grid item xs={8} flexGrow={1}>
+              <Link href="/">
+                <Image src="/images/home.png" width={80} height={80} />
               </Link>
-              <Link href="/Contacto">
-                <a className={classes.textTypo}>Contacto</a>
-              </Link>
-              <Link href="/Login">
-                <a className={classes.textTypo}>Login</a>
-              </Link>
+
             </Grid>
-            <Grid item xs>
-              <IconButton
-                aria-label="open drawer"
-                className={classes.menuButton}
-                onClick={() => props.buttonAbrir()}
-              >
-                <MenuIcon />
-              </IconButton>
-            </Grid>
+
+          </Grid>
+          <Grid item xs sx={{ display: { md: "flex", xs: "none" } }} >
+            <Link href="/Nosotros">
+              <a className={classes.textTypo}>Nosotros</a>
+            </Link>
+          </Grid>
+          <Grid item xs sx={{ display: { md: "flex", xs: "none" } }} >
+            <Link href="/Contacto">
+              <a className={classes.textTypo}>Contacto</a>
+            </Link>
+          </Grid>
+          <Grid item xs sx={{ display: { md: "flex", xs: "none" } }} >
+            <Link href="/Login">
+              <a className={classes.textTypo}>Login</a>
+            </Link>
+          </Grid>
+          <Grid item xs>
+            <IconButton
+
+              aria-label="open drawer"
+              className={classes.menuButton}
+              onClick={() => props.buttonAbrir()}
+            >
+              <MenuIcon />
+            </IconButton>
+
           </Grid>
         </Toolbar>
       </AppBar>

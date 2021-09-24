@@ -27,7 +27,7 @@ export default function SimpleList() {
     <div className={classes.root}>
       <List component="nav" aria-label="main mailbox folders">
         <ListItem button>
-          <ListItemLink href="/">
+          <ListItemLink href="/Nosotros">
           <ListItemText primary="Nosotros" />
           </ListItemLink>
           

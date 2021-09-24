@@ -4,7 +4,7 @@ import Layout from '../../components/Layout/layout'
 const Login = () => {
     return (
         <div>
-            <Layout><h1>Login</h1></Layout>
+            <Layout></Layout>
         </div>
     )
 }
