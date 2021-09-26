@@ -22,9 +22,7 @@ const VideosFixed = () => {
         alignContent="center"
         wrap="nowrap"
       >
-        <video autoPlay muted loop width="100%" height={475}>
-          <source src="/images/edificio.mp4" />
-        </video>
+        <video autoPlay muted loop width="100%" height={475}></video>
       </Grid>
     </div>
   );
