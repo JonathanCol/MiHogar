@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const GridCenter = () => {
+const GridCenter = (props) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -22,7 +22,7 @@ const GridCenter = () => {
         alignContent="center"
         wrap="nowrap"
       >
-        <video autoPlay muted loop width="100%" height={475}></video>
+        <h1>{props.texto}</h1>
       </Grid>
     </div>
   );

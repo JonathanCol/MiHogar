@@ -3,12 +3,7 @@ import AppBar from "../AppBar";
 import DrawerMenu from "../DrawerMenu";
 import React from "react";
 
-import Cards from "../Cards";
 import ImageFirst from "../ImageFirst/ImageFirst";
-import ButtonMed from "../Buttons/ButtonsMed";
-import VideosYou from "../Videos/VideosYou";
-import CardsImage from "../CardsImage";
-
 const useStyles = makeStyles((theme) => ({
   drawer: {
     width: "240px",
@@ -41,10 +36,6 @@ export default function Layout({ children }) {
 
       {children}
       <ImageFirst />
-      <Cards />
-      <ButtonMed />
-      <VideosYou />
-      <CardsImage />
     </div>
   );
 }
