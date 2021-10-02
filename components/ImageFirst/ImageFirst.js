@@ -16,7 +16,7 @@ const fixedImage = () => {
         src="/images/ciudad.jpg"
         layout="responsive"
         width={720}
-        height={200}
+        height={280}
         objectFit="cover"
       />
     </Box>

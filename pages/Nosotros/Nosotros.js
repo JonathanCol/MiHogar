@@ -4,6 +4,10 @@ import Layout from "../../components/Layout/layout";
 import GridCenter from "../../components/GridCenter/GridCenter";
 import GridValores from "../../components/GridValores/GridValores";
 import CardsImage from "../../components/CardsImage";
+
+import FooterLogo from "../../components/FooterLogo/FooterLogo";
+import FooterLinks from "../../components/FooterLinks/FooterLinks";
+
 const Nosotros = () => {
   return (
     <div>
@@ -12,8 +16,12 @@ const Nosotros = () => {
       <GridValores />
       <GridCenter />
       <GridCenter texto="Nuestro Equipo" />
-      <GridCenter texto="Para dirigir una empresa Existosa se necesita un equipo Excepecional" />
+      <GridCenter texto="Para dirigir una empresa Exitosa se necesita un equipo Excepcional" />
       <CardsImage />
+      <GridCenter />
+      <FooterLogo />
+      <FooterLinks />
+      <GridCenter />
     </div>
   );
 };

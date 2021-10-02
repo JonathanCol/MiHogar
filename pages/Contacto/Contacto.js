@@ -1,12 +1,20 @@
-import React from 'react'
-import Layout from '../../components/Layout/layout'
+import React from "react";
 
-const Contacto = () => {
-    return (
-        <div>
-            <Layout></Layout>
-        </div>
-    )
-}
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 
-export default Contacto
+import DrawerStatic from "../../components/DrawerStatic/DrawerStatic";
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+    objectFit: "cover",
+    alignContent: "center",
+    margin: 30,
+  },
+}));
+
+const ResponsiveDrawer = (props) => {
+  const classes = useStyles();
+  return <div className={classes.root}></div>;
+};
+
+export default ResponsiveDrawer;

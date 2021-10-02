@@ -1,12 +1,17 @@
-import React from 'react'
-import Layout from '../../components/Layout/layout'
+import React from "react";
 
-const Login = () => {
-    return (
-        <div>
-            <Layout></Layout>
-        </div>
-    )
-}
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 
-export default Login
+import DrawerStatic from "../../components/DrawerStatic/DrawerStatic";
+const useStyles = makeStyles((theme) => ({}));
+
+const ResponsiveDrawer = (props) => {
+  const classes = useStyles();
+  return (
+    <div>
+      <DrawerStatic />
+    </div>
+  );
+};
+
+export default ResponsiveDrawer;

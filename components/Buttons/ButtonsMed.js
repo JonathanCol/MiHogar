@@ -16,7 +16,7 @@ const ButtonMed = () => {
   const buttonClasses = useStyles();
   return (
     <div className={buttonClasses.root}>
-      <Grid container spacing={0}>
+      <Grid container spacing={3}>
         <Grid item xs={12} sm={4}>
           <div className={buttonClasses.paper}>
             <Button size="large" variant="text" color="default">

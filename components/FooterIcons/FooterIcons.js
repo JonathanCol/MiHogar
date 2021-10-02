@@ -1,13 +1,14 @@
-import { Box, makeStyles, Grid, Typography } from "@material-ui/core";
+import { Box, makeStyles, Grid } from "@material-ui/core";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     objectFit: "cover",
     alignContent: "center",
-    marginTop: 15,
-    fontSize: 23,
-    color: "#00BD56",
+    margin: 30,
   },
 }));
 
@@ -24,11 +25,7 @@ const GridCenter = (props) => {
         alignContent="center"
         wrap="nowrap"
       >
-        <div className={classes.root}>
-          <Typography variant="h3" color="initial">
-            {props.texto}
-          </Typography>
-        </div>
+        <Link href="/"></Link>
       </Grid>
     </div>
   );

@@ -1,17 +1,20 @@
 import { Box, makeStyles, Grid, Typography } from "@material-ui/core";
+import Link from "next/link";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     objectFit: "cover",
+    margin: 30,
+    flexGrow: 1,
+  },
+  center: {
     alignContent: "center",
-    marginTop: 15,
-    fontSize: 23,
-    color: "#00BD56",
   },
 }));
 
-const GridCenter = (props) => {
+const FootSis = (props) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -24,14 +27,12 @@ const GridCenter = (props) => {
         alignContent="center"
         wrap="nowrap"
       >
-        <div className={classes.root}>
-          <Typography variant="h3" color="initial">
-            {props.texto}
-          </Typography>
-        </div>
+        <Link href="/">
+          <Image src="/images/home.png" width={200} height={200} />
+        </Link>
       </Grid>
     </div>
   );
 };
 
-export default GridCenter;
+export default FootSis;
