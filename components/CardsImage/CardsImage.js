@@ -41,7 +41,7 @@ export default function MediaCard() {
   return (
     <div className={classes.margin}>
       <Grid container spacing={1}>
-        <Grid item xs>
+        <Grid item xs={12} sm={12} md>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -73,7 +73,7 @@ export default function MediaCard() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={12} sm={12} md>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -105,7 +105,7 @@ export default function MediaCard() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={12} sm={12} md>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia

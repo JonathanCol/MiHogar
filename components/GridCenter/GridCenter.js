@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 15,
     fontSize: 23,
     color: "#00BD56",
+    textAlign: "center",
   },
 }));
 

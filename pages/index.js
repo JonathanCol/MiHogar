@@ -1,15 +1,14 @@
 import Head from "next/head";
 
 import Layout from "../components/Layout/layout";
-import Cards from "../components/Cards/Cards";
-import ButtonMed from "../components/Buttons/ButtonsMed";
-import VideosYou from "../components/Videos/VideosYou";
 import CardsImage from "../components/CardsImage/CardsImage";
-
 import FooterLogo from "../components/FooterLogo/FooterLogo";
 import FooterLinks from "../components/FooterLinks/FooterLinks";
 import GridCenter from "../components/GridCenter/GridCenter";
 import GridCaract from "../components/GridCaract/GridCaract";
+import DivGreen from "../components/DivGreen/DivGreen";
+import Avatars from "../components/Avatars/Avatars";
+
 export default function Home() {
   return (
     <div className="container">
@@ -21,8 +20,11 @@ export default function Home() {
       <GridCenter texto="Conectamos Ganaderos con Inversionistas" />
       <GridCenter texto="¿Cómo funciona Sosty?" />
       <GridCaract />
+      <DivGreen />
       <CardsImage />
-      <GridCenter />
+      <GridCenter texto="Testimonios" />
+      <Avatars />
+
       <FooterLogo />
       <FooterLinks />
       <GridCenter />
