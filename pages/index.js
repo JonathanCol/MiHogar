@@ -8,6 +8,7 @@ import GridCenter from "../components/GridCenter/GridCenter";
 import GridCaract from "../components/GridCaract/GridCaract";
 import DivGreen from "../components/DivGreen/DivGreen";
 import Avatars from "../components/Avatars/Avatars";
+import DivMargin from "../components/DivMargin";
 
 export default function Home() {
   return (
@@ -20,11 +21,17 @@ export default function Home() {
       <GridCenter texto="Conectamos Ganaderos con Inversionistas" />
       <GridCenter texto="¿Cómo funciona Sosty?" />
       <GridCaract />
+      <DivMargin />
       <DivGreen />
+      <DivMargin />
+      <GridCenter texto="Nuestros Proyectos" />
+      <DivMargin />
       <CardsImage />
+      <DivMargin />
       <GridCenter texto="Testimonios" />
+      <DivMargin />
       <Avatars />
-
+      <DivMargin />
       <FooterLogo />
       <FooterLinks />
       <GridCenter />

@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
   large: {
     width: theme.spacing(35),
     height: theme.spacing(35),
+    marginBottom: 20,
   },
   divGrid: {
     paddingLeft: 10,
@@ -26,9 +27,14 @@ const useStyles = makeStyles((theme) => ({
   },
   divCenter: {
     textAlign: "center",
+    paddingLeft: 10,
+    paddingRight: 10,
   },
   border: {
     borderRadius: "5px",
+  },
+  divNom: {
+    body1: "2rem",
   },
 }));
 
@@ -45,7 +51,7 @@ const AvatarCard = () => {
           alignItems="center"
           alignContent="center"
         >
-          <Grid item xs={12} sm={12} md>
+          <Grid item xs sm={12} md>
             <div>
               <Grid
                 container
@@ -54,13 +60,17 @@ const AvatarCard = () => {
                 justify="center"
                 alignItems="center"
                 alignContent="center"
-                wrap="nowrap"
+                wrap="wrap"
               >
                 <Avatar src="/images/bonita.jpg" className={classes.large} />
               </Grid>
-
+              <div className={classes.divNom}>
+                <Typography color="initial" gutterBottom variant="h4">
+                  DIANA MARTINEZ
+                </Typography>
+              </div>
               <div className={classes.divCenter}>
-                <Typography variant="subtitle1" color="initial">
+                <Typography variant="subtitle1" color="initial" gutterBottom>
                   Mi primera inversión en ganadería la realicé a través de
                   Sosty, debido a las garantías de sostenbilidad ambiental y el
                   nivel de calidad de sus proyectos
@@ -68,7 +78,7 @@ const AvatarCard = () => {
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md>
+          <Grid item xs sm={12} md>
             <div>
               <Grid
                 container
@@ -77,12 +87,17 @@ const AvatarCard = () => {
                 justify="center"
                 alignItems="center"
                 alignContent="center"
-                wrap="nowrap"
+                wrap="wrap"
               >
                 <Avatar src="/images/bonita.jpg" className={classes.large} />
               </Grid>
+              <div className={classes.divNom}>
+                <Typography color="initial" gutterBottom variant="h4">
+                  DIANA MARTINEZ
+                </Typography>
+              </div>
               <div className={classes.divCenter}>
-                <Typography variant="subtitle1" color="initial">
+                <Typography variant="subtitle1" color="initial" gutterBottom>
                   Mi primera inversión en ganadería la realicé a través de
                   Sosty, debido a las garantías de sostenbilidad ambiental y el
                   nivel de calidad de sus proyectos
@@ -90,7 +105,7 @@ const AvatarCard = () => {
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md>
+          <Grid item xs sm={12} md>
             <div>
               <Grid
                 container
@@ -99,12 +114,17 @@ const AvatarCard = () => {
                 justify="center"
                 alignItems="center"
                 alignContent="center"
-                wrap="nowrap"
+                wrap="wrap"
               >
                 <Avatar src="/images/bonita.jpg" className={classes.large} />
               </Grid>
+              <div className={classes.divNom}>
+                <Typography color="initial" gutterBottom variant="h4">
+                  DIANA MARTINEZ
+                </Typography>
+              </div>
               <div className={classes.divCenter}>
-                <Typography variant="subtitle1" color="initial">
+                <Typography variant="subtitle1" color="initial" gutterBottom>
                   Mi primera inversión en ganadería la realicé a través de
                   Sosty, debido a las garantías de sostenbilidad ambiental y el
                   nivel de calidad de sus proyectos
@@ -112,7 +132,7 @@ const AvatarCard = () => {
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md>
+          <Grid item xs sm={12} md>
             <div>
               <Grid
                 container
@@ -121,12 +141,17 @@ const AvatarCard = () => {
                 justify="center"
                 alignItems="center"
                 alignContent="center"
-                wrap="nowrap"
+                wrap="wrap"
               >
                 <Avatar src="/images/bonita.jpg" className={classes.large} />
               </Grid>
+              <div className={classes.divNom}>
+                <Typography color="initial" gutterBottom variant="h4">
+                  DIANA MARTINEZ
+                </Typography>
+              </div>
               <div className={classes.divCenter}>
-                <Typography variant="subtitle1" color="initial">
+                <Typography variant="subtitle1" color="initial" gutterBottom>
                   Mi primera inversión en ganadería la realicé a través de
                   Sosty, debido a las garantías de sostenbilidad ambiental y el
                   nivel de calidad de sus proyectos
