@@ -20,7 +20,7 @@ const stylesImage = makeStyles((theme) => ({
   },
 }));
 
-const fixedImage = () => {
+const fixedImage = (props) => {
   const classes = stylesImage();
   return (
     <Box width={1} className={classes.root}>
@@ -33,8 +33,8 @@ const fixedImage = () => {
         alignContent="center"
         wrap="nowrap"
       >
-        <Typography variant="h1" color="secondary">
-          Mi hogar
+        <Typography variant="h4" color="secondary">
+          {props.title}
         </Typography>
       </Grid>
     </Box>

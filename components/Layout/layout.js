@@ -35,7 +35,7 @@ export default function Layout({ children }) {
       </Hidden>
 
       {children}
-      <ImageFirst />
+      <ImageFirst title="Contact US"/>
     </div>
   );
 }

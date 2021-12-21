@@ -1,20 +1,26 @@
 import React from "react";
 
-import { makeStyles, useTheme } from "@material-ui/core/styles";
 
-import DrawerStatic from "../../components/DrawerStatic/DrawerStatic";
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    objectFit: "cover",
-    alignContent: "center",
-    margin: 30,
-  },
-}));
+import Layout from "../../components/Layout/layout";
+import ContactForm from "../../components/ContactForm";
+import DivMargin from "../../components/DivMargin/DivMargin";
+import GridCenter from "../../components/GridCenter/GridCenter";
+import FooterLogo from "../../components/FooterLogo/FooterLogo";
+import FooterLinks from "../../components/FooterLinks/FooterLinks";
 
-const ResponsiveDrawer = (props) => {
-  const classes = useStyles();
-  return <div className={classes.root}></div>;
-};
+const Contacto = () => {
+  return (
+    <div>
+      <Layout />
+      <DivMargin />
+     <GridCenter texto="Comuniquese con nosotros" />
+     <DivMargin />
+     <ContactForm />
+     <DivMargin />
+     <FooterLogo />
+    <FooterLinks />
+    </div>
+  )
+}
 
-export default ResponsiveDrawer;
+export default Contacto
