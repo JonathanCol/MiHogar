@@ -163,7 +163,8 @@ const ResponsiveDrawer = (props) => {
                   alignItems="center"
                 >
                   <Grid item xs={5}>
-                    <Image src="/images/home.png" width={150} height={150} />
+                    <Link href="/"><Image src="/images/home.png" width={150} height={150} /></Link>
+                    
                   </Grid>
                 </Grid>
 
