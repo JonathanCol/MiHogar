@@ -13,7 +13,7 @@ const Contacto = () => {
     <div>
       <Layout />
       <DivMargin />
-     <GridCenter texto="Comuniquese con nosotros" />
+     <GridCenter texto="Registro de usuarios" />
      <DivMargin />
      <ContactForm />
      <DivMargin />

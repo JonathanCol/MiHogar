@@ -1,4 +1,4 @@
-import { Box, makeStyles, Grid, Typography } from "@material-ui/core";
+import { Box, makeStyles, Grid, Button } from "@material-ui/core";
 import { TextField } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -35,90 +35,106 @@ const ContactForm = (props) => {
       <Grid
         container
         spacing={1}
-        direction="row"
-        justify="center"
+        direction="column"
+        justifyContent="center"
         alignItems="center"
-        alignContent="center"
         wrap="wrap"
       >
-        <Grid item xs={2}>
-          <Typography align="left">Nombre</Typography>
-          <TextField
-            id="standard-full-width"
-            placeholder=""
-            fullWidth
-            margin="normal"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            variant="outlined"
-            margin="dense"
-          />
-        </Grid>
-        <Grid item xs={2}>
-          <Typography align="left">Apellido</Typography>
-          <TextField
-            id="standard-full-width"
-            placeholder=""
-            fullWidth
-            margin="normal"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            variant="outlined"
-            margin="dense"
-          />
-        </Grid>
-        <Grid item xs={2}>
-          <Typography align="left">Correo electronico</Typography>
-          <TextField
-            id="standard-full-width"
-            placeholder=""
-            fullWidth
-            margin="normal"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            variant="outlined"
-            margin="dense"
-          />
-        </Grid>
-        <Grid
-          container
-          spacing={1}
-          direction="row"
-          justify="center"
-          alignItems="center"
-          alignContent="center"
-          wrap="nowrap"
-        >
-          <div className={classes.divMargin}></div>
-        </Grid>
-        <Grid
-          container
-          spacing={1}
-          direction="row"
-          justify="center"
-          alignItems="center"
-          alignContent="center"
-          wrap="wrap"
-        >
-          <Grid item xs={6}>
-            <Typography align="left">Mensaje</Typography>
+        
+          <Grid item xs>
             <TextField
-              id="outlined-full-width"
-              style={{ margin: 4 }}
-              placeholder="Placeholder"
-              multiline
+              id="standard-full-width"
+              placeholder="Nombre"
               fullWidth
               margin="normal"
               InputLabelProps={{
                 shrink: true,
               }}
               variant="outlined"
+              margin="dense"
             />
           </Grid>
-        </Grid>
+          <Grid item xs>
+            <TextField
+              id="standard-full-width"
+              placeholder="Apellido"
+              fullWidth
+              margin="normal"
+              InputLabelProps={{
+                shrink: true,
+              }}
+              variant="outlined"
+              margin="dense"
+            />
+          </Grid>
+          <Grid item xs>
+            <TextField
+              id="standard-full-width"
+              placeholder="Cedula o NIT"
+              fullWidth
+              margin="normal"
+              InputLabelProps={{
+                shrink: true,
+              }}
+              variant="outlined"
+              margin="dense"
+            />
+          </Grid>
+          <Grid item xs>
+            <TextField
+              id="standard-full-width"
+              placeholder="Correo"
+              fullWidth
+              margin="normal"
+              InputLabelProps={{
+                shrink: true,
+              }}
+              variant="outlined"
+              margin="dense"
+            />
+          </Grid>
+          <Grid item xs>
+            <TextField
+              id="standard-full-width"
+              placeholder="Telefono"
+              fullWidth
+              margin="normal"
+              InputLabelProps={{
+                shrink: true,
+              }}
+              variant="outlined"
+              margin="dense"
+            />
+          </Grid>
+          <Grid item xs>
+            <TextField
+              id="standard-full-width"
+              placeholder="Dirección"
+              fullWidth
+              margin="normal"
+              InputLabelProps={{
+                shrink: true,
+              }}
+              variant="outlined"
+              margin="dense"
+            />
+          </Grid>
+          <Grid item xs>
+            <TextField
+              id="standard-full-width"
+              placeholder="Contraseña"
+              fullWidth
+              margin="normal"
+              InputLabelProps={{
+                shrink: true,
+              }}
+              variant="outlined"
+              margin="dense"
+            />
+          </Grid>
+          <Grid item xs>
+            <Button variant="contained" color ="success" >Registrarse</Button>
+          </Grid>
       </Grid>
     </div>
   );

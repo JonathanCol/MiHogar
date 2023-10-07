@@ -53,14 +53,14 @@ const ResponsiveDrawer = (props) => {
         wrap="nowrap"
       >
         <Typography variant="h5" color="initial" className={classes.textTypo}>
-          Bienvenido a Mi Hogar!
+          Bienvenido a SIS-G!
         </Typography>
         <Typography
           variant="subtitle1"
           color="initial"
           className={classes.textTypo}
         >
-          Por favor, crea una cuenta con tu email y contraseña.
+          Por favor, inicia sesion con cuenta con tu email y contraseña.
         </Typography>
         <Typography
           variant="caption"
@@ -98,6 +98,13 @@ const ResponsiveDrawer = (props) => {
           variant="outlined"
           margin="dense"
         />
+        <Typography
+          variant=" caption"
+          color="initial"
+          className={classes.textTypo}
+        >
+          Olvidaste tu contraseña?
+        </Typography>
       </Grid>
     </div>
   );
@@ -173,7 +180,7 @@ const ResponsiveDrawer = (props) => {
                   color="initial"
                   className={classes.textTypo}
                 >
-                  Bienvenido a Mi Hogar!
+                  Bienvenido a SIS-G!
                 </Typography>
                 <Typography
                   variant="subtitle1"
